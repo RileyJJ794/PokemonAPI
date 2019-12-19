@@ -12,10 +12,13 @@ function searchPoke(searchTerm) {
 
 function init(resultFromServer) {
     let species = resultFromServer['species']['name'];
+    let type = resultFromServer['types']['0']['type']['name']
 
     document.getElementById('poke-species').innerHTML = species;
+    document.getElementById('poke-type').innerHTML = type;
+
     document.body.style.backgroundImage = 'none'
-    document.body.style.backgroundColor = 'rgb(197,0,0)';
+    document.body.style.backgroundColor = 'rgb(200,0,0)';
 };
 
 
