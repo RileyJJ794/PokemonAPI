@@ -14,8 +14,8 @@ function init(resultFromServer) {
     let species = resultFromServer['species']['name'];
 
     document.getElementById('poke-species').innerHTML = species;
-
-    document.body.style.backgroundImage = resultFromServer['sprites']['front_default'];
+    document.body.style.backgroundImage = 'none'
+    document.body.style.backgroundColor = 'rgb(197,0,0)';
 };
 
 
