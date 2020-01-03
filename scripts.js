@@ -13,14 +13,17 @@ function searchPoke(searchTerm) {
 function init(resultFromServer) {
     let species = resultFromServer['species']['name'];
     let type = resultFromServer['types']['0']['type']['name'];
+    let image = resultFromServer['sprites']['front_default'];
     let moves = '';
 
-    for (i=0; i < resultFromServer['moves'].length; i++) {
-        moves += resultFromServer['moves'][i]['move']['name'];
+    for (i=0; i < 4; i++) {
+        moves += resultFromServer['moves'][Math.random(resultFromServer['moves'].length)]['move']['name'];
         moves += '<br/>'
     }
 
     document.getElementById('poke-moves').innerHTML = moves;
+
+    document.getElementById('poke-image').src = image;
     document.getElementById('poke-species').innerHTML = species;
     document.getElementById('poke-type').innerHTML = type;
 

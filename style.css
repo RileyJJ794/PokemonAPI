@@ -1,5 +1,5 @@
 body{
-    background-image: url(images/background.png);
+    background-image: url('images/background.png');
     background-size: 1430px 850px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -11,4 +11,9 @@ body{
     grid-column: 2/3;
     visibility: hidden;
     text-align: center;
+}
+
+#poke-image{
+    height: 300px;
+    width: 300px;
 }
