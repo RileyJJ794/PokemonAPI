@@ -17,3 +17,9 @@ body{
     height: 300px;
     width: 300px;
 }
+
+#poke-species{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5em;
+    color: rgb(235, 204, 204);
+}
