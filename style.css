@@ -23,3 +23,7 @@ body{
     font-size: 5em;
     color: rgb(235, 204, 204);
 }
+
+#poke-info{
+    font-family: 'Muli', sans-serif;
+}

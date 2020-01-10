@@ -16,7 +16,7 @@ function init(resultFromServer) {
     let image = resultFromServer['sprites']['front_default'];
     let moves = '';
 
-    if (resultFromServer['moves'].length == 1){
+    if (resultFromServer['moves'].length== 1){
         moves += resultFromServer['moves'][0]['move']['name']
     } else {
         for (i=0; i < 4; i++) {

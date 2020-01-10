@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Permanent+Marker&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <div id=search-container>
         <input type="text" class="search-control" id="search-input" placeholder="Search Pokemon">
         <button class="search-control" id="search-btn">Search</button>
     </div>
-    
+
     <div id="pokedex">
-        <div> <img id='poke-image'src="" alt=""></div>
+        <div> <img id='poke-image' src="" alt=""></div>
         <div id="poke-species"></div>
-        <div id="poke-stats">
-            <div id="poke-type"></div>
+        <div id="poke-info">
+            <div id="poke-stats">
+                <div id="poke-type"></div>
+            </div>
+            <div id="moves">
+                <div id="poke-moves"></div>
+            </div>
         </div>
-        <div id="moves">
-            <div id="poke-moves"></div>
-        </div>
+
     </div>
 
 
     <script src="scripts.js"></script>
 </body>
+
 </html>
