@@ -1,5 +1,6 @@
+const bodyParser = require(body-parser)
 
-
+const express = require(express)
 
 function searchPoke(searchTerm) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`).then(result => {
