@@ -25,9 +25,6 @@ function init(resultFromServer) {
     }
     }
 
-    // hello there
-
-
 
     document.getElementById('poke-moves').innerHTML = moves;
 
