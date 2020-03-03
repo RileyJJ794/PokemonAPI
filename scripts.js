@@ -1,16 +1,23 @@
-const bodyParser = require(body-parser);
+const bodyParser = require('body-parser');
 
-const express = require(express);
+const express = require('express');
 
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', function(req, res) {
-    
-})
+    res.sendfile(__dirname + '/index.html');
+});
 
+// app.post("/", function(req, res) {
+//     let species = req.species.name
+//     console.log(species)
+// })
 
+app.listen(3000, function(){
+    console.log("server running on port 3000");
+});
 
 // function searchPoke(searchTerm) {
 //     fetch(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`).then(result => {
